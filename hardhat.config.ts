@@ -1,4 +1,3 @@
-
 import { HardhatUserConfig, task } from "hardhat/config";
 import "@typechain/hardhat";
 import "@nomiclabs/hardhat-ethers";
@@ -39,15 +38,15 @@ const config: HardhatUserConfig = {
     hardhat: {
       gasPrice: utils.parseUnits("60", "gwei").toNumber(),
     },
-    mainnet: {
-      url: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_PROJECT_ID}`,
+    base: {
+      url: "https://mainnet.base.org",
       accounts: [DEPLOYER_PRIVATE_KEY],
-      gasPrice: utils.parseUnits("150", "gwei").toNumber(),
+      // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
-    evmostestnet: {
-      url: `https://evmos-archive-testnet.api.bdnodes.net:8545`,
+    canto: {
+      url: "https://canto.slingshot.finance",
       accounts: [DEPLOYER_PRIVATE_KEY],
-      gasPrice: utils.parseUnits("50", "gwei").toNumber(),
+      // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
   },
   abiExporter: {
