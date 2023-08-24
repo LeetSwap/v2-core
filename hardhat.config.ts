@@ -48,6 +48,11 @@ const config: HardhatUserConfig = {
       accounts: [DEPLOYER_PRIVATE_KEY],
       // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
+    opbnb: {
+      url: "https://opbnb-mainnet-rpc.bnbchain.org",
+      accounts: [DEPLOYER_PRIVATE_KEY],
+      // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
+    },
   },
   abiExporter: {
     path: "./dist/abi",
