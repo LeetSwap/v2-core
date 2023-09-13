@@ -58,6 +58,11 @@ const config: HardhatUserConfig = {
       accounts: [DEPLOYER_PRIVATE_KEY],
       // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
+    linea: {
+      url: "https://rpc.linea.build",
+      accounts: [DEPLOYER_PRIVATE_KEY],
+      // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
+    },
   },
   abiExporter: {
     path: "./dist/abi",
