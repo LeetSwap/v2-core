@@ -63,6 +63,11 @@ const config: HardhatUserConfig = {
       accounts: [DEPLOYER_PRIVATE_KEY],
       // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
+    manta: {
+      url: "https://pacific-rpc.manta.network/http",
+      accounts: [DEPLOYER_PRIVATE_KEY],
+      // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
+    },
   },
   abiExporter: {
     path: "./dist/abi",
