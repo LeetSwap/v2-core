@@ -68,6 +68,11 @@ const config: HardhatUserConfig = {
       accounts: [DEPLOYER_PRIVATE_KEY],
       // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
+    scroll: {
+      url: "https://rpc.scroll.io",
+      accounts: [DEPLOYER_PRIVATE_KEY],
+      // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
+    },
   },
   abiExporter: {
     path: "./dist/abi",
