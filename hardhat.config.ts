@@ -73,6 +73,11 @@ const config: HardhatUserConfig = {
       accounts: [DEPLOYER_PRIVATE_KEY],
       // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
     },
+    polygonzkevm: {
+      url: "https://zkevm-rpc.com",
+      accounts: [DEPLOYER_PRIVATE_KEY],
+      // gasPrice: utils.parseUnits("150", "gwei").toNumber(),
+    }
   },
   abiExporter: {
     path: "./dist/abi",
